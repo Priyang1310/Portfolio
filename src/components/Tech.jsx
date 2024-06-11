@@ -7,7 +7,7 @@ const Tech = () => {
   const isMobile = window.matchMedia("(max-width: 500px)").matches;
   const Map = (isMobile, technologies) => {
     if (isMobile) {
-      return technologies.slice(0, 9).map((technology) => (
+      return technologies.slice(0, 7).map((technology) => (
         <div className="w-28 h-28" key={technology.name}>
           <BallCanvas icon={technology.icon} />
           <p className="flex justify-center text-white font-bold">
