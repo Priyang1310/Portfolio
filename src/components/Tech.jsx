@@ -1,77 +1,41 @@
 import { BallCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc/SectionWrapper";
-// import { technologies } from "../constants";
-import {
-  javascript,
-  typescript,
-  html,
-  css,
-  reactjs,
-  redux,
-  tailwind,
-  nodejs,
-  mongodb,
-  git,
-  threejs,
-} from "../assets";
+import { technologies } from "../constants";
+
 
 const Tech = () => {
-  const technologies = [
-    {
-      name: "HTML 5",
-      icon: html,
-    },
-    {
-      name: "CSS 3",
-      icon: css,
-    },
-    {
-      name: "JavaScript",
-      icon: javascript,
-    },
-    {
-      name: "TypeScript",
-      icon: typescript,
-    },
-    {
-      name: "React JS",
-      icon: reactjs,
-    },
-    {
-      name: "Redux Toolkit",
-      icon: redux,
-    },
-    {
-      name: "Tailwind CSS",
-      icon: tailwind,
-    },
-    {
-      name: "Node JS",
-      icon: nodejs,
-    },
-    {
-      name: "MongoDB",
-      icon: mongodb,
-    },
-    {
-      name: "Three JS",
-      icon: threejs,
-    },
-    {
-      name: "git",
-      icon: git,
-    },
-  ];
-
-  return (
-    <div className="flex flex-wrap justify-center gap-10">
-      {technologies.map((technology, index) => (
+  const isMobile = window.matchMedia("(max-width: 500px)").matches;
+  const Map = (isMobile, technologies) => {
+    if (isMobile) {
+      return technologies.slice(0, 4).map((technology) => (
         <div className="w-28 h-28" key={technology.name}>
           <BallCanvas icon={technology.icon} />
+          <p className="flex justify-center text-white font-bold">
+            {technology.name}
+          </p>
         </div>
-      ))}
-    </div>
+      ));
+    } else {
+      return technologies.map((technology) => (
+        <div className="w-28 h-28" key={technology.name}>
+          <BallCanvas icon={technology.icon} />
+          <p className="flex justify-center text-white font-bold">
+            {technology.name}
+          </p>
+        </div>
+      ));
+    }
+  };
+  return (
+    <>
+      <h1 className="font-bold flex justify-center text-lg mb-5 text-[#915EFF]">
+        My Tech Stack
+      </h1>
+      <div className="flex flex-row flex-wrap justify-center gap-10">
+        {Map(isMobile, technologies)}
+      </div>
+    </>
   );
 };
 
-export default Tech;
+export default SectionWrapper(Tech, "");
