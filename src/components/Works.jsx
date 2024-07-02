@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { github } from "../assets";
 import { preview } from "../assets";
-import { SectionWrapper } from "../hoc/SectionWrapper";
+// import { SectionWrapper } from "../hoc/SectionWrapper";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 
@@ -15,10 +15,10 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
-  preview_link
+  preview_link,
 }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <motion.div id="work" variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt
         options={{
           max: 45,
@@ -43,12 +43,12 @@ const ProjectCard = ({
                 title="preview"
                 alt="preview"
                 className="w-1/2 h-1/2 object-contain"
-                />
+              />
             </div>
             <div
               onClick={() => window.open(source_code_link, "_black")}
               className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
-              >
+            >
               <img
                 src={github}
                 title="github"
@@ -63,8 +63,10 @@ const ProjectCard = ({
           <p className="mt-2 text-secondary text-[14px]">{description}</p>
         </div>
         <div className="mt-4 flex flex-wrap gap-2">
-          {tags.map((tag)=>(
-            <p className={`text-[14px] ${tag.color}`} key={tag.name}>#{tag.name}</p>
+          {tags.map((tag) => (
+            <p className={`text-[14px] ${tag.color}`} key={tag.name}>
+              #{tag.name}
+            </p>
           ))}
         </div>
       </Tilt>
@@ -80,7 +82,7 @@ const Works = () => {
         <h2 className={styles.sectionHeadText}>Projects.</h2>
       </motion.div>
 
-      <div className="flex w-full">
+      <div className="flex w-full justify-center items-center">
         <motion.p
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
           variants={fadeIn("", "", 0.1, 1)}
@@ -101,4 +103,4 @@ const Works = () => {
   );
 };
 
-export default SectionWrapper(Works,"work");
+export default Works;

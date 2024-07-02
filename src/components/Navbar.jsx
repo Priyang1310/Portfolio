@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { menu, close } from "../assets";
+import AnchorLink from "react-anchor-link-smooth-scroll";
+
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -15,18 +17,15 @@ const Navbar = () => {
       >
         <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
           <Link
-            to={"/"}
+            to="/"
             className="flex items-center gap-2"
             onClick={() => {
               setActive("");
               window.scrollTo(0, 0);
             }}
           >
-            <img
-              src="../../logo.png"
-              alt="logo"
-              className="w-10 h-10 object-contain"
-            />
+            {/* D:\3D_Portfolio\src\assets\logo.png */}
+            <img src="../assets/logo.png"  className="w-10 h-10 object-contain" alt="logo" />
             <p className="text-white font-bold cursor-pointer">Priyang Desai</p>
           </Link>
           <ul className="list-none hidden sm:flex gap-10">
@@ -37,7 +36,7 @@ const Navbar = () => {
                   active === Link.title ? "text-white" : "text-secondary"
                 } hover:text-white text-[18px] font-medium cursor-pointer`}
               >
-                <a href={`#${Link.id}`}>{Link.title}</a>
+                <AnchorLink href={`#${Link.id}`}>{Link.title}</AnchorLink>
               </li>
             ))}
           </ul>
@@ -60,7 +59,7 @@ const Navbar = () => {
                   active === Link.title ? "text-white" : "text-secondary"
                 } hover:text-white text-[18px] font-medium cursor-pointer`}
               >
-                <a href={`#${Link.id}`}>{Link.title}</a>
+               <AnchorLink href={`#${Link.id}`}>{Link.title}</AnchorLink>
               </li>
             ))}
           </ul>

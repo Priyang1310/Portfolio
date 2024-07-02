@@ -1,4 +1,4 @@
-import { SectionWrapper } from "../hoc/SectionWrapper";
+// import { SectionWrapper } from "../hoc/SectionWrapper";
 import { technologies } from "../constants";
 
 const Tech = () => {
@@ -16,4 +16,5 @@ const Tech = () => {
   );
 };
 
-export default SectionWrapper(Tech, "");
+// export default SectionWrapper(Tech, "");
+export default Tech;

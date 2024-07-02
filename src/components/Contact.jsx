@@ -4,7 +4,7 @@ import emailjs from "@emailjs/browser";
 
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
-import { SectionWrapper } from "../hoc/SectionWrapper";
+// import { SectionWrapper } from "../hoc/SectionWrapper";
 import { slideIn } from "../utils/motion";
 
 const Contact = () => {
@@ -55,8 +55,8 @@ const Contact = () => {
   };
 
   return (
-    <div
-      className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
+    <div id="contact"
+      className={`xl:mt-12 w-full flex xl:flex-row flex-col-reverse p-10 pb-20 gap-10 overflow-hidden`}
     >
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
@@ -126,4 +126,4 @@ const Contact = () => {
   );
 };
 
-export default SectionWrapper(Contact,"contact")
+export default (Contact);

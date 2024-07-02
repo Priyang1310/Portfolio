@@ -173,7 +173,7 @@ const projects = [
       },
     ],
     image: mined,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/VanshilPatel/MINeD-24",
     preview_link: "https://www.mined2024.tech/",
   },
   {

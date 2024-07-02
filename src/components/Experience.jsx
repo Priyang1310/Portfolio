@@ -6,7 +6,7 @@ import {
 import { motion } from "framer-motion";
 import "react-vertical-timeline-component/style.min.css";
 import { styles } from "../styles";
-import { SectionWrapper } from "../hoc/SectionWrapper";
+// import { SectionWrapper } from "../hoc/SectionWrapper";
 import { experiences } from "../constants";
 import { textVariant } from "../utils/motion";
 import { div } from "three/examples/jsm/nodes/Nodes.js";
@@ -71,4 +71,5 @@ const Experience = () => {
   );
 };
 
-export default SectionWrapper(Experience,"")
+// export default SectionWrapper(Experience,"")
+export default Experience;
