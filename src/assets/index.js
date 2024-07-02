@@ -7,6 +7,7 @@ import preview from "./preview.png";
 
 import menu from "./menu.svg";
 import close from "./close.svg";
+import logo from "./company/logo.png";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -35,6 +36,7 @@ export {
   web,
   github,
   sidcup,
+  logo,
   cynthia,
   preview,
   menu,

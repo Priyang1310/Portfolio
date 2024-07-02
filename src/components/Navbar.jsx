@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { styles } from "../styles";
-import { navLinks } from "../constants";
+import { navLinks,logo } from "../constants";
 import { menu, close } from "../assets";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
@@ -25,7 +25,7 @@ const Navbar = () => {
             }}
           >
             {/* D:\3D_Portfolio\src\assets\logo.png */}
-            <img src="../assets/logo.png"  className="w-10 h-10 object-contain" alt="logo" />
+            <img src={logo}  className="w-10 h-10 object-contain" alt="logo" />
             <p className="text-white font-bold cursor-pointer">Priyang Desai</p>
           </Link>
           <ul className="list-none hidden sm:flex gap-10">

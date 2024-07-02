@@ -19,6 +19,7 @@ import {
   docker,
   upwork,
   threejs,
+  logo,
   guru,
 } from "../assets";
 
@@ -226,4 +227,4 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export {logo, services, technologies, experiences, testimonials, projects };
