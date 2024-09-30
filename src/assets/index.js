@@ -25,6 +25,7 @@ import threejs from "./tech/threejs.svg";
 import mined from "./mined.png"
 import sidcup from "./sidcup.png"
 import cynthia from "./cynthia.png"
+import chatwithdatabase from "./chatwithdatabase.png"
 
 import upwork from "./company/upwork.png";
 import guru from "./company/guru.png";
@@ -52,6 +53,7 @@ export {
   nodejs,
   reactjs,
   redux,
+  chatwithdatabase,
   tailwind,
   typescript,
   threejs,
