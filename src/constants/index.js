@@ -16,6 +16,7 @@ import {
   mongodb,
   git,
   figma,
+  chatwithdatabse,
   docker,
   upwork,
   threejs,
@@ -155,6 +156,36 @@ const testimonials = [
 ];
 
 const projects = [
+  {
+    name: "Chat With Database",
+    description:
+      "Developed Chat With Database, a tool enabling non-experts to interact with SQL/NoSQL databases through a chat interface, supporting voice queries in Hindi, English, and Gujarati.",
+    tags: [
+      {
+        name: "React.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Node.js",
+        color: "green-text-gradient",
+      },
+      {
+        name: "MongoDB",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "MySQL",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Flask",
+        color: "pink-text-gradient",
+      }
+    ],
+    image: chatwithdatabase,
+    source_code_link: "https://github.com/Priyang1310/Chat-With-Database",
+    preview_link: "https://chat-with-database.vercel.app/",
+  }
   {
     name: "MINeD'2024 website",
     description:
