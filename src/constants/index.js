@@ -185,7 +185,7 @@ const projects = [
     image: chatwithdatabase,
     source_code_link: "https://github.com/Priyang1310/Chat-With-Database",
     preview_link: "https://chat-with-database.vercel.app/",
-  }
+  },
   {
     name: "MINeD'2024 website",
     description:
