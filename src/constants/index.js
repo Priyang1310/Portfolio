@@ -16,7 +16,7 @@ import {
   mongodb,
   git,
   figma,
-  chatwithdatabse,
+  chatwithdatabase,
   docker,
   upwork,
   threejs,
