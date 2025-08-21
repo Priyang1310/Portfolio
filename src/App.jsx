@@ -25,7 +25,7 @@ function App() {
         <footer className="glass-dark text-center py-6 text-gray-300">
           <div className="container mx-auto">
             <p className="text-sm">
-              © 2025 Priyang Desai. Built with React, Tailwind CSS & Framer Motion.
+              © 2025 Priyang Desai
             </p>
             <p className="text-xs mt-2 text-gray-400">
               Exploring the digital universe, one pixel at a time.

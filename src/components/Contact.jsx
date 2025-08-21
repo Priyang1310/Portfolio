@@ -40,8 +40,8 @@ const Contact = () => {
     },
     {
       icon: FaPhone,
-      text: '+91 1234567890',
-      link: 'tel:+911234567890',
+      text: '+91 6352663773',
+      link: 'tel:+916352663773',
       color: 'text-green-400'
     }
   ];

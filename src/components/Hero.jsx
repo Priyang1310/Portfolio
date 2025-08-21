@@ -49,7 +49,8 @@ const Hero = () => {
   
   const roles = [
     "Backend Engineer",
-    "Problem Solver"
+    "Problem Solver",
+    "Software Engineer"
   ];
 
   // Cycle through roles
@@ -194,9 +195,7 @@ const Hero = () => {
             transition={{ delay: 1, duration: 0.8 }}
             className="text-lg md:text-xl text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed"
           >
-            Crafting extraordinary digital experiences with cutting-edge technology. 
-            Transforming complex ideas into elegant solutions that push the boundaries 
-            of what's possible in the digital realm.
+            Aspiring Software Engineer seeking SDE Intern/SDE-1 opportunities to build scalable products and impactful solutions.
           </motion.p>
 
           {/* Action Buttons */}
@@ -207,8 +206,9 @@ const Hero = () => {
             className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16"
           >
             <motion.a
-              href="/Priyang_Desai_Resume.pdf"
-              download
+              href="https://www.linkedin.com/in/priyang-desai1310/"
+              target="_blank"
+              rel="noopener noreferrer"
               whileHover={{ 
                 scale: 1.05, 
                 boxShadow: "0px 0px 40px rgba(6, 182, 212, 0.6)",
@@ -218,7 +218,7 @@ const Hero = () => {
               className="group relative inline-block bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-bold py-4 px-8 rounded-xl shadow-2xl overflow-hidden text-lg transition-all duration-300"
             >
               <span className="relative z-10 flex items-center gap-2">
-                Download Resume
+                LinkedIn Profile
                 <motion.span
                   animate={{ x: [0, 4, 0] }}
                   transition={{ duration: 1.5, repeat: Infinity }}

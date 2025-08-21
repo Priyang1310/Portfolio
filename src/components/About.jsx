@@ -222,53 +222,7 @@ const About = () => {
           </motion.div>
 
           {/* Skills Section */}
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            className="mb-20"
-          >
-            <h3 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
-              Core Skills
-            </h3>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-              {skills.map((skill, index) => (
-                <motion.div
-                  key={skill.name}
-                  initial={{ opacity: 0, scale: 0.8, y: 30 }}
-                  whileInView={{ opacity: 1, scale: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.6, delay: 0.1 * index }}
-                  whileHover={{ scale: 1.05, y: -8 }}
-                  className="relative group bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl border border-white/20 rounded-2xl p-6 text-center hover:border-cyan-400/50 transition-all duration-300"
-                >
-                  <motion.div
-                    whileHover={{ scale: 1.2, rotate: 360 }}
-                    transition={{ duration: 0.5 }}
-                    className="text-5xl mb-4 group-hover:drop-shadow-lg"
-                  >
-                    {skill.icon}
-                  </motion.div>
-                  
-                  <h4 className="text-white font-bold text-lg mb-4">{skill.name}</h4>
-                  
-                  {/* Skill Level Bar */}
-                  <div className="w-full bg-white/20 rounded-full h-2 mb-2 overflow-hidden">
-                    <motion.div
-                      initial={{ width: 0 }}
-                      whileInView={{ width: `${skill.level}%` }}
-                      viewport={{ once: true }}
-                      transition={{ duration: 1, delay: 0.5 + index * 0.1 }}
-                      className={`h-full bg-gradient-to-r ${skill.color} rounded-full`}
-                    />
-                  </div>
-                  <span className="text-sm text-gray-400">{skill.level}%</span>
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
+          
 
           {/* Mission & Vision Section */}
           <motion.div
@@ -307,10 +261,7 @@ const About = () => {
                   viewport={{ once: true }}
                   transition={{ duration: 1, delay: 0.3 }}
                 >
-                  I'm passionate about creating innovative solutions that bridge the gap between technology and human experience. 
-                  My goal is to build applications that not only solve real-world problems but also inspire and delight users 
-                  with their elegance and functionality. I believe in continuous learning and pushing the boundaries of what's 
-                  possible in the digital realm.
+                  I am an aspiring Software Engineer with strong problem-solving skills and hands-on experience in full-stack development. I have interned as a Full Stack and Backend Developer, where I engineered scalable APIs, optimized systems with Redis, and built responsive web apps. With a solid foundation in C++, JavaScript, and MERN stack, I’m eager to contribute to impactful projects while continuously growing my expertise.
                 </motion.p>
                 
                 <motion.div
