@@ -144,7 +144,7 @@ const About = () => {
                     whileHover={{ scale: 1.05 }}
                     className="inline-flex items-center gap-4 px-8 py-4 bg-gradient-to-r from-cyan-500 to-purple-600 rounded-2xl text-white font-bold text-xl shadow-2xl"
                   >
-                    <span>CGPA: 8.32 / 10.0</span>
+                    <span>CGPA: 8.35 / 10.0</span>
                     <motion.span
                       animate={{ rotate: [0, 360] }}
                       transition={{ duration: 2, repeat: Infinity, ease: "linear" }}

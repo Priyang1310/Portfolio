@@ -8,7 +8,6 @@ Personal portfolio built with React and Vite, styled with Tailwind CSS, and anim
 ### Features
 - Modern, responsive layout across all devices
 - Animated sections and micro-interactions powered by Framer Motion
-- Theming support (Light/Dark/System) via a simple context
 - Sections: Home, About, Skills, Experience, Projects, Contact
 - Clean component structure and utility-first styling
 

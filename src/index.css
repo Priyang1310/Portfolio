@@ -16,12 +16,21 @@
 
 /* Light theme variables */
 .light {
-  --space-bg: #f8fafc;
-  --space-bg-light: #e2e8f0;
-  --star-color: #1e293b;
-  --nebula-color: rgba(6, 182, 212, 0.2);
-  --glass-bg: rgba(255, 255, 255, 0.2);
-  --glass-border: rgba(255, 255, 255, 0.3);
+  /* Background remains a clean, light gray */
+  --space-bg: #f8fafc; /* Tailwind slate-50 */
+  --space-bg-light: #e2e8f0; /* Tailwind slate-200 */
+
+  /* Stars and primary text are now a dark, contrasting slate color */
+  --star-color: #1e293b; /* Tailwind slate-800 */
+  
+  /* Nebula effect is slightly more pronounced */
+  --nebula-color: rgba(6, 182, 212, 0.15);
+
+  /* CRITICAL CHANGE: Glass is now a more opaque, off-white for visibility */
+  --glass-bg: rgba(255, 255, 255, 0.6);
+  
+  /* CRITICAL CHANGE: Glass border is now a subtle-but-visible gray */
+  --glass-border: rgba(100, 116, 139, 0.2); /* Tailwind slate-500 at 20% opacity */
 }
 
 /* Dark theme variables */

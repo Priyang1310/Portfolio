@@ -111,7 +111,6 @@ const Contact = () => {
           transition={{ duration: 0.8, delay: 0.5 }}
           className="text-center mb-16"
         >
-          <h3 className="text-3xl font-bold text-cyan-400 mb-8">Connect With Me</h3>
           <div className="flex justify-center space-x-8">
             {socialLinks.map((social, index) => (
               <motion.a

@@ -75,7 +75,7 @@ const Navbar = () => {
             </motion.a>
           ))}
           
-          <motion.button
+          {/* <motion.button
             onClick={toggleTheme}
             className="ml-6 p-3 rounded-full glass hover:bg-cyan-400/20 transition-all duration-300 relative overflow-hidden group"
             whileHover={{ scale: 1.1, rotate: 180 }}
@@ -92,7 +92,7 @@ const Navbar = () => {
               whileHover={{ scale: 1 }}
               transition={{ duration: 0.3 }}
             />
-          </motion.button>
+          </motion.button> */}
         </div>
 
         {/* Mobile menu button */}
